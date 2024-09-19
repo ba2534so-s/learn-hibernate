@@ -11,6 +11,7 @@ public class Main {
 		
 		String url = "";
 		String username = "postgres";
+		String password = "0";
 		
 		Connection connection = DriverManager.getConnection(url , username, password);
 		
