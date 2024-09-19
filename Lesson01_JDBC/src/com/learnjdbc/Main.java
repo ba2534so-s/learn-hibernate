@@ -17,7 +17,7 @@ public class Main {
 		try {
 			Connection con = DriverManager.getConnection(url , username, password);
 			Statement st = con.createStatement();
-			
+			ResultSet rs = st.executeQuery(sql);
 		} catch (Exception e) {
 			e.getMessage();
 		}
