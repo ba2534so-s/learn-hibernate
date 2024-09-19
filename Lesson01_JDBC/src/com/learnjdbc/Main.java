@@ -21,7 +21,7 @@ public class Main {
 			ResultSet rs = st.executeQuery(sql);
 			
 			if (rs.next()) {
-				
+				String name = rs.getString(1);
 			}
 			
 		} catch (Exception e) {
