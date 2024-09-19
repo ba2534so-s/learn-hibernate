@@ -22,6 +22,7 @@ public class Main {
 			
 			if (rs.next()) {
 				String name = rs.getString(1);
+				System.out.println("Name: " + name);
 			}
 			
 		} catch (Exception e) {
