@@ -9,7 +9,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		String sql = "SELECT name FROM students WHERE studentID = 3";
+		String sql = "SELECT * FROM students WHERE studentID = 3";
 		
 		String url = "jdbc:postgresql://localhost:5432/learn_jdbc";
 		String username = "postgres";
@@ -22,7 +22,7 @@ public class Main {
 			ResultSet rs = st.executeQuery(sql);
 			
 			if (rs.next()) {
-				String name = rs.getString(1);
+				String name = rs.getString("name");
 				System.out.println("Name: " + name);
 			}
 			
