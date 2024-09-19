@@ -11,9 +11,10 @@ public class Main {
 		
 		String sql = "SELECT name FROM students WHERE studentID = 3";
 		
-		String url = "jdbc:postgresql://localhost:5432/students";
+		String url = "jdbc:postgresql://localhost:5432/learn_jdbc";
 		String username = "postgres";
 		String password = "0";
+
 		
 		try {
 			Connection con = DriverManager.getConnection(url , username, password);
