@@ -3,7 +3,8 @@ package com.learnjdbc;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		String sql = "SELECT * FROM students WHERE studentID = 3";
 
 	}
 
