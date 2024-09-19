@@ -13,7 +13,11 @@ public class Main {
 		String username = "postgres";
 		String password = "0";
 		
-		Connection connection = DriverManager.getConnection(url , username, password);
+		try {
+			Connection connection = DriverManager.getConnection(url , username, password);			
+		} catch (Exception e) {
+			e.getMessage();
+		}
 		
 
 	}
