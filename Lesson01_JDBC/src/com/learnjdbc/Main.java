@@ -2,6 +2,7 @@ package com.learnjdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.Statement;
 
 public class Main {
 
@@ -14,7 +15,9 @@ public class Main {
 		String password = "0";
 		
 		try {
-			Connection connection = DriverManager.getConnection(url , username, password);			
+			Connection con = DriverManager.getConnection(url , username, password);
+			Statement st = con.createStatement();
+			
 		} catch (Exception e) {
 			e.getMessage();
 		}
