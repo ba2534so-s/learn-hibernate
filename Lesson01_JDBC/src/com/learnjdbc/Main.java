@@ -9,7 +9,7 @@ public class Main {
 		
 		String sql = "SELECT * FROM students WHERE studentID = 3";
 		
-		Connection connection = DriverManager.getConnection();
+		Connection connection = DriverManager.getConnection(url , username, password);
 		
 
 	}
