@@ -25,6 +25,8 @@ public class Main {
 				System.out.println("Name: " + name);
 			}
 			
+			con.close();
+			
 		} catch (Exception e) {
 			e.getMessage();
 		}
