@@ -2,6 +2,7 @@ package com.learnjdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class Main {
@@ -18,6 +19,11 @@ public class Main {
 			Connection con = DriverManager.getConnection(url , username, password);
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
+			
+			if (rs.next()) {
+				
+			}
+			
 		} catch (Exception e) {
 			e.getMessage();
 		}
