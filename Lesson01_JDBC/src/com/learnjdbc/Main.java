@@ -9,7 +9,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		String sql = "SELECT * FROM students WHERE studentID = 3";
+		String sql = "SELECT name FROM students WHERE studentID = 3";
 		
 		String url = "jdbc:postgresql://localhost:5432/students";
 		String username = "postgres";
