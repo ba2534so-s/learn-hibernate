@@ -50,6 +50,12 @@ public class Student {
 	}
 	public void setGrade(char grade) {
 		this.grade = grade;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
 	}	
 	
 	
