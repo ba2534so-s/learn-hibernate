@@ -43,6 +43,10 @@ public class Main
     	// Commit the transaction
     	tx.commit();
     	
+    	// close session
+    	session.close();
+    	sf.close();
+    	
     	
     	
     }
