@@ -16,9 +16,9 @@ public class Main
     public static void main( String[] args )
     {
     	Student s = new Student();
-    	s.setStudentId(4);
-    	s.setName("Spider-Man");
-    	s.setAge(18);
+    	s.setStudentId(3);
+    	s.setName("Batman");
+    	s.setAge(34);
     	s.setGrade('D');
     	
     	
