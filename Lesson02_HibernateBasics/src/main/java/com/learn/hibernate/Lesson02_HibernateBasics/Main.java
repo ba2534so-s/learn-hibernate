@@ -27,7 +27,9 @@ public class Main
     	// Create ServiceRegistry instance
     	ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
     	
-    	SessionFactory sf = con.buildSessionFactory();
+    	 // Build the SessionFactory
+    	SessionFactory sf = con.buildSessionFactory(reg);
+    	
     	Session session = sf.openSession();
 
     	
