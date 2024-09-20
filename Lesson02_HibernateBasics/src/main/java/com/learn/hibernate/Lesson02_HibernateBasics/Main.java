@@ -23,7 +23,7 @@ public class Main
     	
     	
     	// Create Configuration instance and pass in configuration file
-    	Configuration con = new Configuration().configure();
+    	Configuration con = new Configuration().configure().addAnnotatedClass(Student.class);
     	
     	// Create ServiceRegistry instance
     	ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
