@@ -1,5 +1,6 @@
 package com.learn.hibernate.Lesson02_HibernateBasics;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -19,7 +20,7 @@ public class Main
     	
     	Configuration con = new Configuration();
     	SessionFactory sf = con.buildSessionFactory();
-    	
+    	Session session = sf.openSession();
     	
     }
 }
