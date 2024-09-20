@@ -9,6 +9,9 @@ public class Main
     public static void main( String[] args )
     {
     	Student s = new Student();
-    	
+    	s.setStudentId(4);
+    	s.setName("Spider-Man");
+    	s.setAge(18);
+    	s.setGrade('D');
     }
 }
