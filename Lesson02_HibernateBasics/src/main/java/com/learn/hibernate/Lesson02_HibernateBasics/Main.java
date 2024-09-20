@@ -30,9 +30,11 @@ public class Main
     	 // Build the SessionFactory
     	SessionFactory sf = con.buildSessionFactory(reg);
     	
-    	
     	// Open a new Session
     	Session session = sf.openSession();
+    	
+    	// Begin transaction
+    	session.beginTransaction();
 
     	
     }
