@@ -6,5 +6,9 @@ public class Student {
 	private String name;
 	private int age;
 	private char grade;
+	
+	public int getStudentId() {
+		return studentId;
+	}
 
 }
