@@ -3,7 +3,7 @@ package com.learn.hibernate.Lesson02_HibernateBasics;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity
+@Entity(name="students")
 public class Student {
 	
 	@Id
