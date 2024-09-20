@@ -18,9 +18,13 @@ public class Main
     	s.setAge(18);
     	s.setGrade('D');
     	
-    	Configuration con = new Configuration();
+    	
+    	// Create Configuration instance and pass in configuration file
+    	Configuration con = new Configuration().configure();
+    	
     	SessionFactory sf = con.buildSessionFactory();
     	Session session = sf.openSession();
+
     	
     }
 }
