@@ -2,8 +2,11 @@ package com.learn.hibernate.Lesson02_HibernateBasics;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-@Entity(name="students")
+//@Entity(name="students")
+@Entity
+@Table(name="students")
 public class Student {
 	
 	@Id
