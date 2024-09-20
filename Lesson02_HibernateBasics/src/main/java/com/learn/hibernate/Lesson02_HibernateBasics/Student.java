@@ -15,7 +15,11 @@ public class Student {
 	
 	@Column(name="name")
 	private String name;
+	
+	@Column(name="age")
 	private int age;
+	
+	@Column(name="grade")
 	private char grade;
 	
 	public int getStudentId() {
