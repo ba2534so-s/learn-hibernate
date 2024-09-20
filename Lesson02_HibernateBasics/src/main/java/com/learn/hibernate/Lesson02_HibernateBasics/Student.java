@@ -4,13 +4,14 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 //@Entity(name="students")
 @Entity
 @Table(name="students")
 public class Student {
 	
-	@Id
+	@Id()
 	private int studentId;
 	
 	@Column(name="name")
@@ -21,6 +22,10 @@ public class Student {
 	
 	@Column(name="grade")
 	private char grade;
+	
+	@Transient
+	private String gender;
+	
 	
 	public int getStudentId() {
 		return studentId;
