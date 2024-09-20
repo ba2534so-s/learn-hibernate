@@ -37,9 +37,13 @@ public class Main
     	// Start a transaction
     	Transaction tx = session.beginTransaction();
     	
-    	// Save the student entity
+    	// Persist student
     	session.persist(s);
-
+    	
+    	// Commit the transaction
+    	tx.commit();
+    	
+    	
     	
     }
 }
