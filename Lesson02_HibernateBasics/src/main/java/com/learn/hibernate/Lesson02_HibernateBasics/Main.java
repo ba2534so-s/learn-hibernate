@@ -1,5 +1,6 @@
 package com.learn.hibernate.Lesson02_HibernateBasics;
 
+import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 /**
@@ -17,5 +18,8 @@ public class Main
     	s.setGrade('D');
     	
     	Configuration con = new Configuration();
+    	SessionFactory sf = con.buildSessionFactory();
+    	
+    	
     }
 }
