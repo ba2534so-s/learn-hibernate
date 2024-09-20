@@ -2,6 +2,7 @@ package com.learn.hibernate.Lesson02_HibernateBasics;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
@@ -33,8 +34,11 @@ public class Main
     	// Open a new Session
     	Session session = sf.openSession();
     	
-    	// Begin transaction
-    	session.beginTransaction();
+    	// Start a transaction
+    	Transaction tx = session.beginTransaction();
+    	
+    	// Save the student entity
+    	session.persist(s);
 
     	
     }
