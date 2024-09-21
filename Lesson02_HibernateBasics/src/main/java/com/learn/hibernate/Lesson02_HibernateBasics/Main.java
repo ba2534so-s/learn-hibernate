@@ -37,8 +37,12 @@ public class Main
     	// Start a transaction
     	Transaction tx = session.beginTransaction();
     	
-    	// Persist student
-    	session.persist(s);
+    	// Persist student (add student)
+    	//session.persist(s);
+    	
+    	// Fetch student
+    	s = session.get(Student.class, "3");
+    	
     	
     	// Commit the transaction
     	tx.commit();
