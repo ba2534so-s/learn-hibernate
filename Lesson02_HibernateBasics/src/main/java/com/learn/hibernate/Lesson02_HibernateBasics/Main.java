@@ -21,7 +21,7 @@ public class Main
     	name.setlName("Kent");
     	
     	Student s = new Student();
-    	s.setStudentId(3);
+    	s.setStudentId(5);
     	s.setName(name);
     	s.setAge(34);
     	s.setGrade('D');
@@ -43,10 +43,10 @@ public class Main
     	Transaction tx = session.beginTransaction();
     	
     	// Persist student (add student)
-    	//session.persist(s);
+    	session.persist(s);
     	
     	// Fetch student
-    	s = (Student) session.get(Student.class, "3");
+    	//s = (Student) session.get(Student.class, "3");
     	
     	
     	// Commit the transaction
