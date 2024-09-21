@@ -22,7 +22,7 @@ public class Main
     	
     	Student s = new Student();
     	s.setStudentId(3);
-    	s.setName("Batman");
+    	s.setName(name);
     	s.setAge(34);
     	s.setGrade('D');
     	
