@@ -4,6 +4,6 @@ public class StudentName {
 	
 	private String fName;
 	private String mName;
-	
+	private String lName;
 
 }
