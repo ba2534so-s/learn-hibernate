@@ -1,5 +1,8 @@
 package com.learn.hibernate.Lesson02_HibernateBasics;
 
+import jakarta.persistence.Embeddable;
+
+@Embeddable
 public class StudentName {
 	
 	private String fName;
