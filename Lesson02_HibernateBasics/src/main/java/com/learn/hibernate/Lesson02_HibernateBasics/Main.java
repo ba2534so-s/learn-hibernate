@@ -41,7 +41,7 @@ public class Main
     	//session.persist(s);
     	
     	// Fetch student
-    	s = session.get(Student.class, "3");
+    	s = (Student) session.get(Student.class, "3");
     	
     	
     	// Commit the transaction
