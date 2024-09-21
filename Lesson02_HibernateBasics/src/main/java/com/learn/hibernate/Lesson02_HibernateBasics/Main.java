@@ -16,7 +16,9 @@ public class Main
     public static void main( String[] args )
     {
     	StudentName name = new StudentName();
-    	
+    	name.setfName("Clark");
+
+
     	
     	Student s = new Student();
     	s.setStudentId(3);
