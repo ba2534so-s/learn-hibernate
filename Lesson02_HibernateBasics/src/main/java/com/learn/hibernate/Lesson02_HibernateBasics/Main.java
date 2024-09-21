@@ -51,6 +51,7 @@ public class Main
     	session.close();
     	sf.close();
     	
+    	System.out.println(s);
     	
     	
     }
