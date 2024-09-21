@@ -15,9 +15,14 @@ public class Main
 {
     public static void main( String[] args )
     {
+    	StudentName name = new StudentName();
+    	name.setfName("Clark");
+    	name.setmName("John");
+    	name.setlName("Kent");
+    	
     	Student s = new Student();
-    	s.setStudentId(3);
-    	s.setName("Batman");
+    	s.setStudentId(5);
+    	s.setName(name);
     	s.setAge(34);
     	s.setGrade('D');
     	
@@ -37,8 +42,12 @@ public class Main
     	// Start a transaction
     	Transaction tx = session.beginTransaction();
     	
-    	// Persist student
+    	// Persist student (add student)
     	session.persist(s);
+    	
+    	// Fetch student
+    	//s = (Student) session.get(Student.class, "3");
+    	
     	
     	// Commit the transaction
     	tx.commit();
@@ -47,6 +56,7 @@ public class Main
     	session.close();
     	sf.close();
     	
+    	System.out.println(s);
     	
     	
     }

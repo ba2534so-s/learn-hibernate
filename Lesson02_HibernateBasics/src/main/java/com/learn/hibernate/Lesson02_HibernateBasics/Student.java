@@ -1,16 +1,31 @@
 package com.learn.hibernate.Lesson02_HibernateBasics;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
+//@Entity(name="students")
 @Entity
+@Table(name="students")
 public class Student {
 	
 	@Id
 	private int studentId;
-	private String name;
+	
+	@Column(name="name")
+	private StudentName name;
+	
+	@Column(name="age")
 	private int age;
+	
+	@Column(name="grade")
 	private char grade;
+	
+	@Transient
+	private String gender;
+	
 	
 	public int getStudentId() {
 		return studentId;
@@ -18,10 +33,10 @@ public class Student {
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
-	public String getName() {
+	public StudentName getName() {
 		return name;
 	}
-	public void setName(String name) {
+	public void setName(StudentName name) {
 		this.name = name;
 	}
 	public int getAge() {
@@ -35,7 +50,18 @@ public class Student {
 	}
 	public void setGrade(char grade) {
 		this.grade = grade;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
 	}	
 	
+	@Override
+	public String toString() {
+		return this.getName().toString();
+		
+	}
 	
 }
