@@ -58,5 +58,10 @@ public class Student {
 		this.gender = gender;
 	}	
 	
+	@Override
+	public String toString() {
+		return this.getName();
+		
+	}
 	
 }
