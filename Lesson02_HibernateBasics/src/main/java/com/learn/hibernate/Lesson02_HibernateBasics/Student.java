@@ -33,10 +33,10 @@ public class Student {
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
-	public String getName() {
+	public StudentName getName() {
 		return name;
 	}
-	public void setName(String name) {
+	public void setName(StudentName name) {
 		this.name = name;
 	}
 	public int getAge() {
