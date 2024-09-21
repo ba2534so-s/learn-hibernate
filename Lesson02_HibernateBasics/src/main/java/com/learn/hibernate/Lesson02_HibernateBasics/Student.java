@@ -11,7 +11,7 @@ import jakarta.persistence.Transient;
 @Table(name="students")
 public class Student {
 	
-	@Id()
+	@Id
 	private int studentId;
 	
 	@Column(name="name")
