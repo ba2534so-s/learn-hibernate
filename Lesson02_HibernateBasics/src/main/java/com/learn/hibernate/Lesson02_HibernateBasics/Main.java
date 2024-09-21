@@ -15,6 +15,9 @@ public class Main
 {
     public static void main( String[] args )
     {
+    	StudentName name = new StudentName();
+    	
+    	
     	Student s = new Student();
     	s.setStudentId(3);
     	s.setName("Batman");
