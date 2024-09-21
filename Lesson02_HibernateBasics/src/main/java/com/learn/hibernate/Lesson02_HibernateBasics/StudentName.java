@@ -25,6 +25,11 @@ public class StudentName {
 	public void setlName(String lName) {
 		this.lName = lName;
 	}
+	
+	@Override
+	public String toString() {
+		return this.getfName() + " " + this.getmName() + " " + this.getlName(); 
+	}
 
 	
 	
