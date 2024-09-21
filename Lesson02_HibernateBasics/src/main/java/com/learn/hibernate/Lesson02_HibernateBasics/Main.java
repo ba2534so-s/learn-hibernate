@@ -17,7 +17,7 @@ public class Main
     {
     	StudentName name = new StudentName();
     	name.setfName("Clark");
-
+    	name.setmName("John");
 
     	
     	Student s = new Student();
