@@ -60,7 +60,7 @@ public class Student {
 	
 	@Override
 	public String toString() {
-		return this.getName();
+		return this.getName().toString();
 		
 	}
 	
