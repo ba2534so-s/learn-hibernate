@@ -28,5 +28,7 @@ public class Main
        SessionFactory sf = con.buildSessionFactory(reg);
        Session session = sf.openSession();
        
+       session.beginTransaction();
+       
     }
 }
