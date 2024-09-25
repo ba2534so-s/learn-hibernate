@@ -1,6 +1,8 @@
 package com.learnhibernate.Lesson03_RelationMapping;
 
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
 
 /**
  * Hello world!
@@ -20,5 +22,8 @@ public class Main
        s1.setGrade('D');
        
        Configuration con = new Configuration().configure().addAnnotatedClass(Student.class).addAnnotatedClass(Laptop.class);
+       ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
+       
+       
     }
 }
