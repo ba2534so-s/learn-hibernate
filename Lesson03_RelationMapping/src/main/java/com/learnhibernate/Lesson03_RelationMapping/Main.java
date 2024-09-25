@@ -12,6 +12,7 @@ public class Main
        l1.setLaptopID(1);
        l1.setModel("Lenovo");
        
+       Student s1 = new Student();
        
     }
 }
