@@ -13,6 +13,7 @@ public class Main
        l1.setModel("Lenovo");
        
        Student s1 = new Student();
+       s1.setStudentID(1);
        
     }
 }
