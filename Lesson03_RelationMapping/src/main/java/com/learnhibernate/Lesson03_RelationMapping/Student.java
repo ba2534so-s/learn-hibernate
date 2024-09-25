@@ -5,6 +5,8 @@ public class Student {
 	private int studentID;
 	private String name;
 	private char grade;
+	
+	
 	public int getStudentID() {
 		return studentID;
 	}
@@ -24,6 +26,10 @@ public class Student {
 		this.grade = grade;
 	}
 	
+	@Override
+	public String toString() {
+		return this.getName();
+	}
 	
 
 }
