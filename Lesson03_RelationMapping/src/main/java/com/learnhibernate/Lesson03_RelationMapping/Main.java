@@ -10,6 +10,7 @@ public class Main
     {
        Laptop l1 = new Laptop();
        l1.setLaptopID(1);
+       l1.setModel("Lenovo");
        
        
     }
