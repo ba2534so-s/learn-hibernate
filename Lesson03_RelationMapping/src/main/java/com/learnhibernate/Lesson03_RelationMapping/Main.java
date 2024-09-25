@@ -1,5 +1,7 @@
 package com.learnhibernate.Lesson03_RelationMapping;
 
+import org.hibernate.cfg.Configuration;
+
 /**
  * Hello world!
  *
@@ -16,5 +18,7 @@ public class Main
        s1.setStudentID(1);
        s1.setName("Sven");
        s1.setGrade('D');
+       
+       Configuration con = new Configuration().configure().addAnnotatedClass(Student.class).addAnnotatedClass(Laptop.class);
     }
 }
