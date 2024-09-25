@@ -15,5 +15,6 @@ public class Main
        Student s1 = new Student();
        s1.setStudentID(1);
        s1.setName("Sven");
+       s1.setGrade('D');
     }
 }
