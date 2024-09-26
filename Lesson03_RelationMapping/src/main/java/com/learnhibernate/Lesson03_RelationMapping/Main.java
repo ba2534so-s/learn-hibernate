@@ -31,7 +31,7 @@ public class Main
        session.beginTransaction();
        
        session.persist(l1);
-       
+       session.persist(s1);
        
     }
 }
