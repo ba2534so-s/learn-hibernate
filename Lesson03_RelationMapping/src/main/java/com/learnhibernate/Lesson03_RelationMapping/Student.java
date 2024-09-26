@@ -10,6 +10,7 @@ public class Student {
 	private int studentID;
 	private String name;
 	private char grade;
+	private Laptop laptop;
 	
 	
 	public int getStudentID() {
