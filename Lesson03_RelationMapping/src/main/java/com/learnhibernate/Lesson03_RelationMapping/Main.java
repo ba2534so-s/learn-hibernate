@@ -34,6 +34,7 @@ public class Main
        session.persist(l1);
        session.persist(s1);
        
+       tx.commit();
        
        
     }
