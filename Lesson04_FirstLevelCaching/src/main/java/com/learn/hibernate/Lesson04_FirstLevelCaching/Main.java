@@ -10,6 +10,7 @@ public class Main
 {
     public static void main( String[] args )
     {
-        Configuration con = new Configuration().configure().addAnnotatedClass(null);
+        Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
+        
     }
 }
