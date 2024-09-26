@@ -1,10 +1,12 @@
 package com.learnhibernate.Lesson03_RelationMapping;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class Student {
 	
+	@Id
 	private int studentID;
 	private String name;
 	private char grade;
