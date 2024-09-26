@@ -50,7 +50,7 @@ public class Main
        tx.commit();
        
        for(Laptop laptop : s2.getLaptops()) {
-
+    	   System.out.println(laptop);
        }
        
        session.close();
