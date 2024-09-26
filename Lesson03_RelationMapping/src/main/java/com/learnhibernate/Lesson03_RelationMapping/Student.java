@@ -5,6 +5,7 @@ import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 
@@ -18,9 +19,10 @@ public class Student {
 	
 	//@OneToOne
 	//private Laptop laptop;
-	@OneToMany(mappedBy="student")
+	//@OneToMany(mappedBy="student")
+	//private List<Laptop> laptops = new ArrayList<>();
+	@ManyToMany
 	private List<Laptop> laptops = new ArrayList<>();
-	
 	
 	public int getStudentID() {
 		return studentID;
