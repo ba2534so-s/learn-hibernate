@@ -24,7 +24,9 @@ public class Main
        s1.setName("Sven");
        s1.setGrade('D');
        //s1.setLaptop(l1);
+       
        s1.getLaptops().add(l1);
+       l1.setStudent(s1);
        
        
        Configuration con = new Configuration().configure().addAnnotatedClass(Student.class).addAnnotatedClass(Laptop.class);
