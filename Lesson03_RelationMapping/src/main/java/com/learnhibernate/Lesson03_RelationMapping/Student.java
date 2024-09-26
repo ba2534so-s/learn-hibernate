@@ -1,5 +1,8 @@
 package com.learnhibernate.Lesson03_RelationMapping;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
@@ -12,8 +15,10 @@ public class Student {
 	private String name;
 	private char grade;
 	
-	@OneToOne
-	private Laptop laptop;
+	//@OneToOne
+	//private Laptop laptop;
+	
+	private List<Laptop> laptops = new ArrayList<>();
 	
 	
 	public int getStudentID() {
