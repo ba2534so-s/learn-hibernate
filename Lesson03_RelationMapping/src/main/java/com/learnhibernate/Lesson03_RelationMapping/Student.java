@@ -21,7 +21,7 @@ public class Student {
 	//private Laptop laptop;
 	//@OneToMany(mappedBy="student")
 	//private List<Laptop> laptops = new ArrayList<>();
-	@ManyToMany
+	@ManyToMany(mappedBy="student")
 	private List<Laptop> laptops = new ArrayList<>();
 	
 	public int getStudentID() {
