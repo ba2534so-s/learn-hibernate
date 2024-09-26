@@ -49,7 +49,9 @@ public class Main
        
        tx.commit();
        
-       
+       for(Laptop laptop : s2.getLaptops()) {
+
+       }
        
        session.close();
        sf.close();
