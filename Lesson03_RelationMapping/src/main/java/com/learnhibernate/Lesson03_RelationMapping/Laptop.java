@@ -16,7 +16,7 @@ public class Laptop {
 	
 	//@ManyToOne
 	//private Student student;
-	
+	@ManyToMany
 	private List<Student> students = new ArrayList<>();
 	
 	public int getLaptopID() {
