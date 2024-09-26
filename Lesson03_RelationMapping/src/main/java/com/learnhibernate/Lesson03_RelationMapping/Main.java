@@ -49,6 +49,8 @@ public class Main
        
        tx.commit();
        
+       System.out.println(s2);
+       
        for(Laptop laptop : s2.getLaptops()) {
     	   System.out.println(laptop);
        }
