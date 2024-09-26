@@ -30,5 +30,8 @@ public class Main
        
        session.beginTransaction();
        
+       session.persist(l1);
+       
+       
     }
 }
