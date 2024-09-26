@@ -32,6 +32,13 @@ public class Student {
 		this.grade = grade;
 	}
 	
+	public Laptop getLaptop() {
+		return laptop;
+	}
+	public void setLaptop(Laptop laptop) {
+		this.laptop = laptop;
+	}
+	
 	@Override
 	public String toString() {
 		return this.getName();
