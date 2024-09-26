@@ -1,5 +1,8 @@
 package com.learnhibernate.Lesson03_RelationMapping;
 
+import jakarta.persistence.Entity;
+
+@Entity
 public class Laptop {
 	
 	private int laptopID;
