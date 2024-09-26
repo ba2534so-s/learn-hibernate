@@ -51,11 +51,12 @@ public class Student {
 	public void setLaptops(List<Laptop> laptops) {
 		this.laptops = laptops;
 	}
-
 	@Override
 	public String toString() {
-		return this.getName();
+		return "Student [studentID=" + studentID + ", name=" + name + ", grade=" + grade + ", laptops=" + laptops + "]";
 	}
+
+	
 	
 
 }
