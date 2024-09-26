@@ -31,12 +31,13 @@ public class Laptop {
 	public void setModel(String model) {
 		this.model = model;
 	}
-	public Student getStudent() {
-		return student;
+	public List<Student> getStudents() {
+		return students;
 	}
-	public void setStudent(Student student) {
-		this.student = student;
+	public void setStudents(List<Student> students) {
+		this.students = students;
 	}
+	
 	
 	
 
