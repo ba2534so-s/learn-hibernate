@@ -2,6 +2,7 @@ package com.learnhibernate.Lesson03_RelationMapping;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
@@ -28,10 +29,12 @@ public class Main
        SessionFactory sf = con.buildSessionFactory(reg);
        Session session = sf.openSession();
        
-       session.beginTransaction();
+       Transaction tx = session.beginTransaction();
        
        session.persist(l1);
        session.persist(s1);
+       
+       
        
     }
 }
