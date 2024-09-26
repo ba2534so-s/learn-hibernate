@@ -1,10 +1,12 @@
 package com.learnhibernate.Lesson03_RelationMapping;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class Laptop {
 	
+	@Id
 	private int laptopID;
 	private String model;
 	
