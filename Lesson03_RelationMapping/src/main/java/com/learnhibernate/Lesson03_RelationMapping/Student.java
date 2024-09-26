@@ -18,7 +18,7 @@ public class Student {
 	
 	//@OneToOne
 	//private Laptop laptop;
-	@OneToMany
+	@OneToMany(mappedBy="student")
 	private List<Laptop> laptops = new ArrayList<>();
 	
 	
