@@ -1,5 +1,8 @@
 package com.learn.hibernate.Lesson04_FirstLevelCaching;
 
+import jakarta.persistence.Entity;
+
+@Entity
 public class Employee {
 	
 	
