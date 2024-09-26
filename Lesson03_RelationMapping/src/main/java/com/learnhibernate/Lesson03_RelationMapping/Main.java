@@ -47,7 +47,9 @@ public class Main
        
        Student s2 = session.get(Student.class, 1);
        
-    
+       tx.commit();
+       
+       
        
        session.close();
        sf.close();
