@@ -10,6 +10,8 @@ public class Laptop {
 	private int laptopID;
 	private String model;
 	
+	private Student student;
+	
 	
 	public int getLaptopID() {
 		return laptopID;
