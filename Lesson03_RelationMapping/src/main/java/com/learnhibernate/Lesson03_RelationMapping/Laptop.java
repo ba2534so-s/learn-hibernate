@@ -39,6 +39,10 @@ public class Laptop {
 		this.students = students;
 	}
 	
+	@Override
+	public String toString() {
+		return getModel();
+	}
 	
 	
 

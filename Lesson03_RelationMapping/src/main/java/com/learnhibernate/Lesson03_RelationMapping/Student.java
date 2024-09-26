@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
@@ -21,7 +22,7 @@ public class Student {
 	//private Laptop laptop;
 	//@OneToMany(mappedBy="student")
 	//private List<Laptop> laptops = new ArrayList<>();
-	@ManyToMany(mappedBy="students")
+	@ManyToMany(mappedBy="students", fetch=FetchType.EAGER)
 	private List<Laptop> laptops = new ArrayList<>();
 	
 	public int getStudentID() {
@@ -50,11 +51,12 @@ public class Student {
 	public void setLaptops(List<Laptop> laptops) {
 		this.laptops = laptops;
 	}
-
 	@Override
 	public String toString() {
-		return this.getName();
+		return "Student [studentID=" + studentID + ", name=" + name + ", grade=" + grade + ", laptops=" + laptops + "]";
 	}
+
+	
 	
 
 }

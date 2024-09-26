@@ -43,6 +43,18 @@ public class Main
        
        tx.commit();
        
+       tx = session.beginTransaction();
+       
+       Student s2 = session.get(Student.class, 1);
+       
+       tx.commit();
+       
+       System.out.println(s2);
+       
+       for(Laptop laptop : s2.getLaptops()) {
+    	   System.out.println(laptop);
+       }
+       
        session.close();
        sf.close();
        
