@@ -40,13 +40,14 @@ public class Student {
 		this.grade = grade;
 	}
 	
-	public Laptop getLaptop() {
-		return laptop;
+
+	public List<Laptop> getLaptops() {
+		return laptops;
 	}
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
+	public void setLaptops(List<Laptop> laptops) {
+		this.laptops = laptops;
 	}
-	
+
 	@Override
 	public String toString() {
 		return this.getName();
