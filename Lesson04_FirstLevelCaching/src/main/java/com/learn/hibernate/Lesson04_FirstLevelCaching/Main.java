@@ -1,5 +1,6 @@
 package com.learn.hibernate.Lesson04_FirstLevelCaching;
 
+import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
@@ -14,6 +15,7 @@ public class Main
     {
         Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
         ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
+        SessionFactory sf = con.buildSessionFactory(reg);
         
     }
 }
