@@ -2,6 +2,7 @@ package com.learnhibernate.Lesson03_RelationMapping;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Laptop {
@@ -10,6 +11,7 @@ public class Laptop {
 	private int laptopID;
 	private String model;
 	
+	@ManyToOne
 	private Student student;
 	
 	
