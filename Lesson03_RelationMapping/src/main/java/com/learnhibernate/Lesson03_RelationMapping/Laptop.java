@@ -25,6 +25,12 @@ public class Laptop {
 	public void setModel(String model) {
 		this.model = model;
 	}
+	public Student getStudent() {
+		return student;
+	}
+	public void setStudent(Student student) {
+		this.student = student;
+	}
 	
 	
 
