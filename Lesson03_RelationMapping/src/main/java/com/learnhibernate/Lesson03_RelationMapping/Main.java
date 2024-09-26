@@ -43,8 +43,11 @@ public class Main
        
        tx.commit();
        
+       tx = session.beginTransaction();
        
        Student s2 = session.get(Student.class, 1);
+       
+    
        
        session.close();
        sf.close();
