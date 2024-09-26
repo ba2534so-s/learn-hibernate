@@ -5,6 +5,7 @@ import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 
 @Entity
@@ -17,7 +18,7 @@ public class Student {
 	
 	//@OneToOne
 	//private Laptop laptop;
-	
+	@OneToMany
 	private List<Laptop> laptops = new ArrayList<>();
 	
 	
