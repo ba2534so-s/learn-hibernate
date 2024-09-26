@@ -26,5 +26,12 @@ public class Employee {
 		this.role = role;
 	}
 	
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", name=" + name + ", role=" + role + "]";
+	}
+	
+	
+	
 	
 }
