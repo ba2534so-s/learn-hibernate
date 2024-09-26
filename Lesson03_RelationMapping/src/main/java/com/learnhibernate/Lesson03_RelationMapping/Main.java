@@ -23,6 +23,7 @@ public class Main
        s1.setStudentID(1);
        s1.setName("Sven");
        s1.setGrade('D');
+       s1.setLaptop(l1);
        
        Configuration con = new Configuration().configure().addAnnotatedClass(Student.class).addAnnotatedClass(Laptop.class);
        ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
