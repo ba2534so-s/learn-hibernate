@@ -36,6 +36,9 @@ public class Main
        
        tx.commit();
        
+       session.close();
+       
+       
        
     }
 }
