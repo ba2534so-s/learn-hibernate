@@ -14,7 +14,11 @@ public class Main
 {
     public static void main( String[] args )
     {
-        Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
+        Employee e = null;
+        e.setEmployeeId(101);
+        
+    	
+    	Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
         ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
         SessionFactory sf = con.buildSessionFactory(reg);
         Session session1 = sf.openSession();
