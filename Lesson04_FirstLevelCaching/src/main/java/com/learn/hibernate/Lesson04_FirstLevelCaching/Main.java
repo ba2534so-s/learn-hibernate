@@ -16,7 +16,8 @@ public class Main
     {
         Employee e = null;
         e.setEmployeeId(101);
-        e.setName("Sven Eriksson");
+        e.setName("John Smith");
+        e.setRole("Salesman");
         
     	
     	Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
