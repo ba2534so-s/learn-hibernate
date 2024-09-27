@@ -14,7 +14,7 @@ public class Main
 {
     public static void main( String[] args )
     {
-        Employee e = null;
+        Employee e = new Employee();
         e.setEmployeeId(101);
         e.setName("John Smith");
         e.setRole("Salesman");
