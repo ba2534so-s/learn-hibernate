@@ -26,10 +26,13 @@ public class Main
         e = session1.get(Employee.class, 102);
         System.out.println(e);
         
+        // Due to First Level Caching this query will not run a second time
         e = session1.get(Employee.class, 102);
         System.out.println(e);
         
         session1.getTransaction().commit();
+        
+        Session session2 = sf.openSession();
         
     }
 }
