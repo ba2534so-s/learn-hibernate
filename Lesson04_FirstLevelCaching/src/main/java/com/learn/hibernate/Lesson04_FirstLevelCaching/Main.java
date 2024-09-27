@@ -26,6 +26,8 @@ public class Main
         Session session1 = sf.openSession();
         session1.beginTransaction();
         
+        session1.persist(e);
+        
         session1.getTransaction().commit();
         
     }
