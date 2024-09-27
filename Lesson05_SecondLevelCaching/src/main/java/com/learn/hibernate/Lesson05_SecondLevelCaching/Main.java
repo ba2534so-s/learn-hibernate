@@ -34,6 +34,7 @@ public class Main
         Session session2 = sf.openSession();
         session2.beginTransaction();
         
+        e = session2.get(Employee.class, 102);
         
     }
 }
