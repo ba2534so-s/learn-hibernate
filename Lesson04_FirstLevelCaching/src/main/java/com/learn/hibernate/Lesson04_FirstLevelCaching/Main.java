@@ -37,6 +37,8 @@ public class Main
         Session session2 = sf.openSession();
         session2.beginTransaction();
         
+        // First Level Caching only works for the same session.
+        // This query will run a second time
         e = session2.get(Employee.class, 102);
         System.out.println(e);
         
