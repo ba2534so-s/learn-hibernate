@@ -17,7 +17,8 @@ public class Main
         Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
         ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
         SessionFactory sf = con.buildSessionFactory(reg);
-        Session session = sf.openSession();
+        Session session1 = sf.openSession();
+        session1.beginTransaction();
         
     }
 }
