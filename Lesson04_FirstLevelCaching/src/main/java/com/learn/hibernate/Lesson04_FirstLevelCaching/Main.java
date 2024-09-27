@@ -14,10 +14,7 @@ public class Main
 {
     public static void main( String[] args )
     {
-        Employee e = new Employee();
-        e.setEmployeeId(103);
-        e.setName("Owen Walker");
-        e.setRole("CEO");
+        Employee e = null;
         
     	
     	Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
@@ -26,7 +23,7 @@ public class Main
         Session session1 = sf.openSession();
         session1.beginTransaction();
         
-        session1.persist(e);
+        
         
         session1.getTransaction().commit();
         
