@@ -41,6 +41,7 @@ public class Main
         System.out.println(e);
         
         session2.getTransaction().commit();
+        session2.close();
         
     }
 }
