@@ -38,6 +38,7 @@ public class Main
         session2.beginTransaction();
         
         e = session2.get(Employee.class, 102);
+        System.out.println(e);
         
     }
 }
