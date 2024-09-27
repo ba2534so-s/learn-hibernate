@@ -1,6 +1,8 @@
 package com.learn.hibernate.Lesson05_SecondLevelCaching;
 
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
 
 /**
  * Hello world!
@@ -13,7 +15,7 @@ public class Main
         Employee e = null;
         
         Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
-        
+        ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
         
     }
 }
