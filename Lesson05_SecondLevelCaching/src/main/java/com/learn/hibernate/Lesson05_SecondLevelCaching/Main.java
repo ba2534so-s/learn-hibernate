@@ -26,6 +26,7 @@ public class Main
         System.out.println(e);
         
         e = session1.get(Employee.class, 102);
+        System.out.println(e);
         
     }
 }
