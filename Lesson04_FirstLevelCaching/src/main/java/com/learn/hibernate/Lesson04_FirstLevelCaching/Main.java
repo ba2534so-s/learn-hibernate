@@ -40,5 +40,7 @@ public class Main
         e = session2.get(Employee.class, 102);
         System.out.println(e);
         
+        session2.getTransaction().commit();
+        
     }
 }
