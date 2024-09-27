@@ -23,6 +23,7 @@ public class Main
         Session session1 = sf.openSession();
         session1.beginTransaction();
         
+        e = session1.get(Employee.class, 102);
         
         
         session1.getTransaction().commit();
