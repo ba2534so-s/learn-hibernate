@@ -32,5 +32,8 @@ public class Main
         session1.close();
         
         Session session2 = sf.openSession();
+        session2.beginTransaction();
+        
+        
     }
 }
