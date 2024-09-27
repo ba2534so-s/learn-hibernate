@@ -15,9 +15,9 @@ public class Main
     public static void main( String[] args )
     {
         Employee e = new Employee();
-        e.setEmployeeId(101);
-        e.setName("John Smith");
-        e.setRole("Salesman");
+        e.setEmployeeId(103);
+        e.setName("Owen Walker");
+        e.setRole("CEO");
         
     	
     	Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
