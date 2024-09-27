@@ -27,6 +27,7 @@ public class Main
         System.out.println(e);
         
         e = session1.get(Employee.class, 103);
+        System.out.println(e);
         
         session1.getTransaction().commit();
         
