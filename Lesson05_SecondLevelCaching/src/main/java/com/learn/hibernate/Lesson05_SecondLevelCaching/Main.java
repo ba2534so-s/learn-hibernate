@@ -20,6 +20,7 @@ public class Main
         ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
         SessionFactory sf = con.buildSessionFactory(reg);
         Session session1 = sf.openSession();
+        session1.beginTransaction();
         
     }
 }
