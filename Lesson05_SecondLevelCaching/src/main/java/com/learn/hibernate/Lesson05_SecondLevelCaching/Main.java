@@ -23,7 +23,7 @@ public class Main
         session1.beginTransaction();
         
         e = session1.get(Employee.class, 102);
-        
+        System.out.println(e);
         
     }
 }
