@@ -31,6 +31,7 @@ public class Main
         System.out.println(e);
         
         session1.getTransaction().commit();
+        session1.close();
         
         
         Session session2 = sf.openSession();
