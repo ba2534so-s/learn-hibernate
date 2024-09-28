@@ -41,5 +41,10 @@
     	<artifactId>jcache</artifactId>
     	<version>1.0.1</version>
 	</dependency>
+	<dependency>
+    	<groupId>org.hibernate.orm</groupId>
+    	<artifactId>hibernate-jcache</artifactId>
+    	<version>6.6.1.Final</version>
+	</dependency>
   </dependencies>
 </project>
