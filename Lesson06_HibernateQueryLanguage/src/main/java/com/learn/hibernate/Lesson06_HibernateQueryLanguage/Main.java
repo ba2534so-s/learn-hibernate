@@ -25,7 +25,7 @@ public class Main
     	Random r = new Random();
     	
     	for (int i = 1; i <= 50; i++) {
-    		
+    		Employee e = new Employee();
     	}
     	
     	session.getTransaction().commit();
