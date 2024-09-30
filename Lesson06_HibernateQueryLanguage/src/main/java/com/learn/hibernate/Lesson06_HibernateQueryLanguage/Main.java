@@ -46,6 +46,7 @@ public class Main
     	for (Employee e : employees) {
     		System.out.println(e);
     	}
+    	System.out.println();
     	session.getTransaction().commit();
     	session.beginTransaction();
     	// get employee with id 3
