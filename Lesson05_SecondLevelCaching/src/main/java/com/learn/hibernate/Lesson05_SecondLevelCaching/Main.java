@@ -50,7 +50,7 @@ public class Main
         String hqlQuery = "from Employee where employeeId = :id";
         SelectionQuery<Employee> query = session3.createSelectionQuery(hqlQuery, Employee.class);
         
-        query.setParameter("id", 102);
+        query.setParameter("id", 103);
         
         e = query.getSingleResult();
         System.out.println(e);
