@@ -35,7 +35,6 @@ public class Main
     	}
     	*/
     	
-    	String hqlQuery = "from Employee";
     	SelectionQuery<Employee> query = session.createSelectionQuery("from Employee", Employee.class);
     	
     	session.getTransaction().commit();
