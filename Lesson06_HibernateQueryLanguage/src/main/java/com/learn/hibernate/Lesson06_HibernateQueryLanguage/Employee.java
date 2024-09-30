@@ -11,7 +11,7 @@ public class Employee {
 	@Id
 	private int employeeId;
 	private String name;
-	
+	private int salary;
 	
 
 }
