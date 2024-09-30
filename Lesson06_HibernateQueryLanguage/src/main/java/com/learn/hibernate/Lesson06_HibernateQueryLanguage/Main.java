@@ -60,7 +60,7 @@ public class Main
     	
     	SelectionQuery<Object[]> query3 = session.createSelectionQuery(
     			"select employeeId, name, salary from Employee where employeeId = 2", Object[].class);
-    			
+    	Object[] employee = query3.getSingleResult();
     	
     }
 }
