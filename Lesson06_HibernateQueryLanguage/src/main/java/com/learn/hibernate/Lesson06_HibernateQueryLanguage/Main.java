@@ -4,7 +4,7 @@ package com.learn.hibernate.Lesson06_HibernateQueryLanguage;
  * Hello world!
  *
  */
-public class App 
+public class Main 
 {
     public static void main( String[] args )
     {
