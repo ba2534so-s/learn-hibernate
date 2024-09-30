@@ -65,5 +65,7 @@ public class Main
         e = query.getSingleResult();
         System.out.println(e);
         
+        session4.getTransaction().commit();
+        
     }
 }
