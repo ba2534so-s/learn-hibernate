@@ -63,7 +63,9 @@ public class Main
     			"select employeeId, name, salary from Employee where employeeId = 2", Object[].class);
     	Object[] employee = query3.getSingleResult();
     	
-    	
+    	if(employee != null) {
+    		
+    	}
     	
     }
 }
