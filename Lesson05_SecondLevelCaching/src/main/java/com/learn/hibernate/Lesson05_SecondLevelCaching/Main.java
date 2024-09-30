@@ -22,6 +22,8 @@ public class Main
         Session session1 = sf.openSession();
         session1.beginTransaction();
         
+        String hqlQuery = "from Employee where employeeId = :id";
+        
         e = session1.get(Employee.class, 102);
         System.out.println(e);
         
@@ -33,7 +35,7 @@ public class Main
         
         Session session2 = sf.openSession();
         session2.beginTransaction();
-        
+         
         e = session2.get(Employee.class, 102);
         System.out.println(e);
         
