@@ -48,11 +48,11 @@ public class Main
         session3.beginTransaction();
         
         String hqlQuery = "from Employee where employeeId = :id";
-        SelectionQuery<Employee> query = session3.createSelectionQuery(hqlQuery, Employee.class);
+        SelectionQuery<Employee> query1 = session3.createSelectionQuery(hqlQuery, Employee.class);
         
-        query.setParameter("id", 103);
+        query1.setParameter("id", 103);
         
-        e = query.getSingleResult();
+        e = query1.getSingleResult();
         System.out.println(e);
         
         session3.getTransaction().commit();
