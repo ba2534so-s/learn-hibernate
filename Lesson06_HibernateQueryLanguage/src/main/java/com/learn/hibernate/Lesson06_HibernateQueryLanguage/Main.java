@@ -36,6 +36,7 @@ public class Main
     	}
     	*/
     	
+    	// get all employees
     	SelectionQuery<Employee> query = session.createSelectionQuery("from Employee", Employee.class);
     	List<Employee> employees = query.getResultList();
     	
