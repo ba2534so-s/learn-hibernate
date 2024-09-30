@@ -37,12 +37,17 @@ public class Main
     	*/
     	
     	// get all employees
-    	SelectionQuery<Employee> query = session.createSelectionQuery("from Employee", Employee.class);
-    	List<Employee> employees = query.getResultList();
+    	//SelectionQuery<Employee> query = session.createSelectionQuery("from Employee", Employee.class);
+    	
+    	// get all employees with a salary above 30,000
+    	SelectionQuery<Employee> query = session.createSelectionQuery("from Employee where salary > 30000", Employee.class);
+     	List<Employee> employees = query.getResultList();
     	
     	for (Employee e : employees) {
     		System.out.println(e);
     	}
+    	
+    	
     	
     	
     	session.getTransaction().commit();
