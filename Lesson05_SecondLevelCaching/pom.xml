@@ -42,8 +42,6 @@
 			<artifactId>hibernate-jcache</artifactId>
 			<version>6.6.1.Final</version>
 		</dependency>
-		
-
 	</dependencies>
 
 </project>
