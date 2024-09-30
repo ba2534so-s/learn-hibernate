@@ -18,5 +18,7 @@
         <property name="hibernate.cache.region.factory_class">jcache</property>
         <!-- Ehcache as JCache provider -->
         <property name="hibernate.javax.cache.provider">org.ehcache.jsr107.EhcacheCachingProvider</property>
+        
+        <property name="hibernate.cache.use_query_cache">true</property>
     </session-factory>
 </hibernate-configuration>
