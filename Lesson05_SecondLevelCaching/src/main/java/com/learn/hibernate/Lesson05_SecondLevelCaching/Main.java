@@ -61,8 +61,8 @@ public class Main
         Session session4 = sf.openSession();
         session4.beginTransaction();
         
-        query = session4.createSelectionQuery(hqlQuery, Employee.class).setParameter("id", 103);
-        e = query.getSingleResult();
+        SelectionQuery<Employee> query2 = session4.createSelectionQuery(hqlQuery, Employee.class).setParameter("id", 103);
+        e = query2.getSingleResult();
         System.out.println(e);
         
         session4.getTransaction().commit();
