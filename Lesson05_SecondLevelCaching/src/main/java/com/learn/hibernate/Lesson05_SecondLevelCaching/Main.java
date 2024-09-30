@@ -4,6 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.SelectionQuery;
 import org.hibernate.service.ServiceRegistry;
 
 /**
@@ -22,6 +23,7 @@ public class Main
         Session session1 = sf.openSession();
         session1.beginTransaction();
         
+        
         e = session1.get(Employee.class, 102);
         System.out.println(e);
         
@@ -33,12 +35,40 @@ public class Main
         
         Session session2 = sf.openSession();
         session2.beginTransaction();
-        
+         
         e = session2.get(Employee.class, 102);
         System.out.println(e);
         
         session2.getTransaction().commit();
         session2.close();
+        
+        System.out.println();
+        
+        Session session3 = sf.openSession();
+        session3.beginTransaction();
+        
+        String hqlQuery = "from Employee where employeeId = :id";
+        SelectionQuery<Employee> query1 = session3.createSelectionQuery(hqlQuery, Employee.class);
+        query1.setCacheable(true);
+        
+        query1.setParameter("id", 103);
+        
+        e = query1.getSingleResult();
+        System.out.println(e);
+        
+        session3.getTransaction().commit();
+        session3.close();
+        
+        Session session4 = sf.openSession();
+        session4.beginTransaction();
+        
+        SelectionQuery<Employee> query2 = session4.createSelectionQuery(hqlQuery, Employee.class).setParameter("id", 103);
+        query2.setCacheable(true);
+        e = query2.getSingleResult();
+        System.out.println(e);
+        
+        session4.getTransaction().commit();
+        session4.close();
         
     }
 }
