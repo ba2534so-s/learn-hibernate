@@ -1,11 +1,15 @@
 package com.learn.hibernate.Lesson05_SecondLevelCaching;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import jakarta.persistence.Cacheable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
 @Cacheable
+@Cache(usage=CacheConcurrencyStrategy.READ_ONLY)
 public class Employee {
 	
 	@Id
