@@ -26,6 +26,8 @@ public class Main
         String hqlQuery = "from Employee where employeeId = :id";
         SelectionQuery<Employee> query = session1.createSelectionQuery(hqlQuery, Employee.class);
         
+        query.setParameter("id", 102);
+        
         e = session1.get(Employee.class, 102);
         System.out.println(e);
         
