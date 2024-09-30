@@ -21,9 +21,9 @@ public class Main
     	Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
     	ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
     	SessionFactory sf = con.buildSessionFactory(reg);
-    	Session session = sf.openSession();
+    	Session session1 = sf.openSession();
     	
-    	session.beginTransaction();
+    	session1.beginTransaction();
     	
     	/* create 50 employees
     	Random rand = new Random();
@@ -37,22 +37,23 @@ public class Main
     	*/
     	
     	// get all employees
-    	//SelectionQuery<Employee> query = session.createSelectionQuery("from Employee", Employee.class);
+    	SelectionQuery<Employee> query = session1.createSelectionQuery("from Employee", Employee.class);
     	
     	// get all employees with a salary above 30,000
     	//SelectionQuery<Employee> query = session.createSelectionQuery("from Employee where salary > 30000", Employee.class);
-     	//List<Employee> employees = query.getResultList();
+     	List<Employee> employees = query.getResultList();
+    	
+    	for (Employee e : employees) {
+    		System.out.println(e);
+    	}
     	
     	// get employee with id 3
     	SelectionQuery<Employee> query = session.createSelectionQuery("from Employee where employeeId = 3", Employee.class);
     	Employee e = query.getSingleResult();
     	System.out.println(e);
     	
-    	/*
-    	for (Employee e : employees) {
-    		System.out.println(e);
-    	}
-    	*/
+    	
+    	
     	
     	
     	
