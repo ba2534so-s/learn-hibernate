@@ -63,6 +63,7 @@ public class Main
         session4.beginTransaction();
         
         SelectionQuery<Employee> query2 = session4.createSelectionQuery(hqlQuery, Employee.class).setParameter("id", 103);
+        query2.setCacheable(true);
         e = query2.getSingleResult();
         System.out.println(e);
         
