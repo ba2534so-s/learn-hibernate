@@ -22,12 +22,13 @@ public class Main
     	Session session = sf.openSession();
     	
     	session.beginTransaction();
-    	Random r = new Random();
+    	Random rand = new Random();
     	
     	for (int i = 1; i <= 50; i++) {
     		Employee e = new Employee();
     		e.setEmployeeId(i);
     		e.setName("Name " + i);
+    		e.setSalary(rand.nextInt(50000));
     	}
     	
     	session.getTransaction().commit();
