@@ -40,13 +40,18 @@ public class Main
     	//SelectionQuery<Employee> query = session.createSelectionQuery("from Employee", Employee.class);
     	
     	// get all employees with a salary above 30,000
-    	SelectionQuery<Employee> query = session.createSelectionQuery("from Employee where salary > 30000", Employee.class);
-     	List<Employee> employees = query.getResultList();
+    	//SelectionQuery<Employee> query = session.createSelectionQuery("from Employee where salary > 30000", Employee.class);
+     	//List<Employee> employees = query.getResultList();
     	
+    	
+    	SelectionQuery<Employee> query = session.createSelectionQuery("from Employee where employeeId = 3", Employee.class);
+    	
+    	
+    	/*
     	for (Employee e : employees) {
     		System.out.println(e);
     	}
-    	
+    	*/
     	
     	
     	
