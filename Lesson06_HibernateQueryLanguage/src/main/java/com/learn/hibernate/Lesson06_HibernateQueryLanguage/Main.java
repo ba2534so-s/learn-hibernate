@@ -29,6 +29,7 @@ public class Main
     		e.setEmployeeId(i);
     		e.setName("Name " + i);
     		e.setSalary(rand.nextInt(50000));
+    		session.persist(e);
     	}
     	
     	session.getTransaction().commit();
