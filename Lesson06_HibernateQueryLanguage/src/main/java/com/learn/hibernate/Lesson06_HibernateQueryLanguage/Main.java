@@ -47,7 +47,7 @@ public class Main
     		System.out.println(e);
     	}
     	session.getTransaction().commit();
-    	
+    	session.beginTransaction();
     	// get employee with id 3
     	SelectionQuery<Employee> query2 = session.createSelectionQuery("from Employee where employeeId = 3", Employee.class);
     	Employee e = query2.getSingleResult();
