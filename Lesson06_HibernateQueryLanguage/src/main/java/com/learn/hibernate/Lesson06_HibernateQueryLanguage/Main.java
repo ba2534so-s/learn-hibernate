@@ -22,8 +22,9 @@ public class Main
     	Session session = sf.openSession();
     	
     	session.beginTransaction();
-    	Random rand = new Random();
     	
+    	/* create 50 employees
+    	Random rand = new Random();
     	for (int i = 1; i <= 50; i++) {
     		Employee e = new Employee();
     		e.setEmployeeId(i);
@@ -31,6 +32,8 @@ public class Main
     		e.setSalary(rand.nextInt(50000));
     		session.persist(e);
     	}
+    	*/
+    	
     	
     	session.getTransaction().commit();
     }
