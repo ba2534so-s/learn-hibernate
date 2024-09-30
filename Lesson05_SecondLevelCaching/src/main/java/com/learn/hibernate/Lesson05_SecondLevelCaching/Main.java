@@ -4,6 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.SelectionQuery;
 import org.hibernate.service.ServiceRegistry;
 
 /**
@@ -23,6 +24,7 @@ public class Main
         session1.beginTransaction();
         
         String hqlQuery = "from Employee where employeeId = :id";
+        SelectionQuery<Employee> query = session1.createSelectionQuery(hqlQuery, Employee.class);
         
         e = session1.get(Employee.class, 102);
         System.out.println(e);
