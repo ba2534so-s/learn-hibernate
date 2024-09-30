@@ -23,10 +23,6 @@ public class Main
         Session session1 = sf.openSession();
         session1.beginTransaction();
         
-        String hqlQuery = "from Employee where employeeId = :id";
-        SelectionQuery<Employee> query = session1.createSelectionQuery(hqlQuery, Employee.class);
-        
-        query.setParameter("id", 102);
         
         e = session1.get(Employee.class, 102);
         System.out.println(e);
@@ -46,5 +42,12 @@ public class Main
         session2.getTransaction().commit();
         session2.close();
         
+        
+        Session session3 = sf.openSession();
+        
+        String hqlQuery = "from Employee where employeeId = :id";
+        SelectionQuery<Employee> query = session1.createSelectionQuery(hqlQuery, Employee.class);
+        
+        query.setParameter("id", 102);
     }
 }
