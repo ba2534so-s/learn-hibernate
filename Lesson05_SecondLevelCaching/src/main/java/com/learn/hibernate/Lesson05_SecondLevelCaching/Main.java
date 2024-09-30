@@ -57,5 +57,7 @@ public class Main
         
         session3.getTransaction().commit();
         session3.close();
+        
+        Session session4 = sf.openSession();
     }
 }
