@@ -42,6 +42,7 @@ public class Main
         session2.getTransaction().commit();
         session2.close();
         
+        System.out.println();
         
         Session session3 = sf.openSession();
         
