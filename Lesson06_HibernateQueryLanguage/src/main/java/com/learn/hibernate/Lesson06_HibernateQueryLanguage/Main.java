@@ -54,7 +54,10 @@ public class Main
     	Employee e = query2.getSingleResult();
     	System.out.println(e);
     	System.out.println();
+    	
     	session.getTransaction().commit();
+    	session.beginTransaction();
+    	
     	
     }
 }
