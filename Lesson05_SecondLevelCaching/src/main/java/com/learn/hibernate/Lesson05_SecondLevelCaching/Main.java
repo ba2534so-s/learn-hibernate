@@ -53,5 +53,6 @@ public class Main
         query.setParameter("id", 102);
         
         e = query.getSingleResult();
+        System.out.println(e);
     }
 }
