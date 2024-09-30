@@ -45,7 +45,7 @@ public class Main
     	
     	
     	SelectionQuery<Employee> query = session.createSelectionQuery("from Employee where employeeId = 3", Employee.class);
-    	
+    	Employee e = query.getSingleResult();
     	
     	/*
     	for (Employee e : employees) {
