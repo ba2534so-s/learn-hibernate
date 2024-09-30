@@ -51,5 +51,7 @@ public class Main
         SelectionQuery<Employee> query = session3.createSelectionQuery(hqlQuery, Employee.class);
         
         query.setParameter("id", 102);
+        
+        e = query.getSingleResult();
     }
 }
