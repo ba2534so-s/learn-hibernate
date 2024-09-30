@@ -24,6 +24,10 @@ public class Main
     	session.beginTransaction();
     	Random r = new Random();
     	
+    	for (int i = 1; i <= 50; i++) {
+    		
+    	}
+    	
     	session.getTransaction().commit();
     }
 }
