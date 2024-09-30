@@ -60,5 +60,7 @@ public class Main
         
         Session session4 = sf.openSession();
         session4.beginTransaction();
+        
+        query = session4.createSelectionQuery(hqlQuery, Employee.class);
     }
 }
