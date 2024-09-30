@@ -26,6 +26,7 @@ public class Main
     	
     	for (int i = 1; i <= 50; i++) {
     		Employee e = new Employee();
+    		e.setEmployeeId(i);
     	}
     	
     	session.getTransaction().commit();
