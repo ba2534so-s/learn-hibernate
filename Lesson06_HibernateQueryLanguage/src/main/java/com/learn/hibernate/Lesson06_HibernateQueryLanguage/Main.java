@@ -1,5 +1,6 @@
 package com.learn.hibernate.Lesson06_HibernateQueryLanguage;
 
+import java.util.List;
 import java.util.Random;
 
 import org.hibernate.Session;
@@ -36,6 +37,8 @@ public class Main
     	*/
     	
     	SelectionQuery<Employee> query = session.createSelectionQuery("from Employee", Employee.class);
+    	List<Employee> employees = query.getResultList();
+    	
     	
     	session.getTransaction().commit();
     }
