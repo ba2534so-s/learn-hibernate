@@ -7,6 +7,8 @@ import jakarta.persistence.Table;
 @Table(name="Employee")
 public class Employee {
 	
+	private int employeeId;
+	
 	
 
 }
