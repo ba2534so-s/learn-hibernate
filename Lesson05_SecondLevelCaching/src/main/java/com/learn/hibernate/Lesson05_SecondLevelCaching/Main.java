@@ -45,6 +45,7 @@ public class Main
         System.out.println();
         
         Session session3 = sf.openSession();
+        session3.beginTransaction();
         
         String hqlQuery = "from Employee where employeeId = :id";
         SelectionQuery<Employee> query = session1.createSelectionQuery(hqlQuery, Employee.class);
