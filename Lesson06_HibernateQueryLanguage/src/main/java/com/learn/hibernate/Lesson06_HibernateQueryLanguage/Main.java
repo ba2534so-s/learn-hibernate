@@ -53,12 +53,8 @@ public class Main
     	SelectionQuery<Employee> query2 = session.createSelectionQuery("from Employee where employeeId = 3", Employee.class);
     	Employee e = query2.getSingleResult();
     	System.out.println(e);
-    	
-    	
-    	
-    	
-    	
-    	
+    	System.out.println();
     	session.getTransaction().commit();
+    	
     }
 }
