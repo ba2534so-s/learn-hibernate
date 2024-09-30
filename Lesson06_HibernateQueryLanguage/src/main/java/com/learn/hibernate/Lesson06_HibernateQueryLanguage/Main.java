@@ -34,6 +34,7 @@ public class Main
     	}
     	*/
     	
+    	String hqlQuery = "from Employee";
     	
     	session.getTransaction().commit();
     }
