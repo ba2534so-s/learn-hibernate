@@ -21,6 +21,6 @@ public class Main
     	
     	session.beginTransaction();
     	
-    	
+    	session.getTransaction().commit();
     }
 }
