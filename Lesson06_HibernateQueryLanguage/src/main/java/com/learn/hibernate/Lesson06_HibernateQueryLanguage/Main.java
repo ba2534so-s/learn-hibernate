@@ -58,8 +58,8 @@ public class Main
     	session.getTransaction().commit();
     	session.beginTransaction();
     	
-    	SelectionQuery<Employee> query3 = session.createSelectionQuery(
-    			"select employeeId, name, salary from Employee where employeeId = 2", Employee.class);
+    	SelectionQuery<Object[]> query3 = session.createSelectionQuery(
+    			"select employeeId, name, salary from Employee where employeeId = 2", Object[].class);
     			
     	
     }
