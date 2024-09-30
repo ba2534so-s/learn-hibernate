@@ -1,5 +1,7 @@
 package com.learn.hibernate.Lesson06_HibernateQueryLanguage;
 
+import java.util.Random;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -20,6 +22,7 @@ public class Main
     	Session session = sf.openSession();
     	
     	session.beginTransaction();
+    	Random r = new Random();
     	
     	session.getTransaction().commit();
     }
