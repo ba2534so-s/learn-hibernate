@@ -63,7 +63,7 @@ public class Main
         
         query = session4.createSelectionQuery(hqlQuery, Employee.class).setParameter("id", 103);
         e = query.getSingleResult();
-        
+        System.out.println(e);
         
     }
 }
