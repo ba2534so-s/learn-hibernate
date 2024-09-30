@@ -59,5 +59,6 @@ public class Main
         session3.close();
         
         Session session4 = sf.openSession();
+        session4.beginTransaction();
     }
 }
