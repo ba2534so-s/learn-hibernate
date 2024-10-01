@@ -1,9 +1,12 @@
 package com.learn.hibernate.Lesson07_SQLinHibernate;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.NativeQuery;
 import org.hibernate.service.ServiceRegistry;
 
 /**
@@ -20,7 +23,9 @@ public class Main
         Session session = sf.openSession();
         
         session.beginTransaction();
-        
+
+        // Using SQL queries in Hibernate 6
+        NativeQuery<Employee> employees = session.createNativeQuery("SELECT * FROM employees", Employee.class);
         
         session.getTransaction().commit();
         
