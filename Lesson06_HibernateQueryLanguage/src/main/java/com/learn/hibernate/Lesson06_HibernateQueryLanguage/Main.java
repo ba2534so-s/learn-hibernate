@@ -68,5 +68,9 @@ public class Main
     	}
     	System.out.println();
     	
+    	
+    	SelectionQuery<Object[]> query4 = session.createSelectionQuery(
+    			"select employeeId, name, salary from Employee", Object[].class);
+    	
     }
 }
