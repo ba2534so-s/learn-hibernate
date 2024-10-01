@@ -66,6 +66,7 @@ public class Main
     	if(employee != null) {
     		System.out.println("Id: " + employee[0] + " - " + employee[1] + " - " + employee[2]);
     	}
+    	System.out.println();
     	
     }
 }
