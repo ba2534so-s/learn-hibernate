@@ -31,17 +31,12 @@ public class Main
         session.persist(e);
         e.setSalary(27000);
         
+        // Employee desn't get saved to table until it's committed
+        session.getTransaction().commit();
+        
         
         // Employee e now goes into detached state and changes wont get saved in the db
         session.detach(e);
         e.setSalary(10000);
-        
-        
-        
-        
-        // Employee desn't get saved to table until it's commited
-        session.getTransaction().commit();
-        
-        
     }
 }
