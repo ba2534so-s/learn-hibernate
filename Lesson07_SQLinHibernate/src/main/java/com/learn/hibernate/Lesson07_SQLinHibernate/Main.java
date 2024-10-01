@@ -29,7 +29,7 @@ public class Main
         List<Employee> employees = query.getResultList();
         
         for(Employee e : employees) {
-        	
+        	System.out.println(e);
         }
         
         session.getTransaction().commit();
