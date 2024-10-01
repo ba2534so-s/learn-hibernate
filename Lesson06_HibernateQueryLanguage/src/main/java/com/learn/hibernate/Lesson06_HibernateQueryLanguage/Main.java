@@ -72,7 +72,7 @@ public class Main
     	session.beginTransaction();
     	
     	SelectionQuery<Object[]> query4 = session.createSelectionQuery(
-    			"select employeeId, name, salary from Employee", Object[].class);
+    			"select employeeId, name, salary from Employee e where e.salary > 35000", Object[].class);
     	List<Object[]> employeeColumns = query4.getResultList(); 
     	
     	for (Object[] o : employeeColumns) {
