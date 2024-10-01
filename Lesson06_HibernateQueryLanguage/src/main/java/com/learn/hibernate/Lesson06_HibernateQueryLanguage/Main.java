@@ -75,8 +75,8 @@ public class Main
     			"select employeeId, name, salary from Employee", Object[].class);
     	List<Object[]> employeeColumns = query4.getResultList(); 
     	
-    	for (Object o : employeeColumns) {
-    		
+    	for (Object[] o : employeeColumns) {
+    		System.out.println("Id: " + o[0] + " - " + o[1] + " - " + o[2]);
     	}
     	
     	
