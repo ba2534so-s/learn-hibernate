@@ -86,7 +86,7 @@ public class Main
     	Object totalSalaries = query.getSingleResult();    	
     			
     	System.out.println("Total salaries: " + totalSalaries);
-    	
+    	System.out.println();
     	
     }
 }
