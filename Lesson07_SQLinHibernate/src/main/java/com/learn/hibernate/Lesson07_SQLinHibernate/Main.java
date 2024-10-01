@@ -43,6 +43,8 @@ public class Main
         
         List<Object[]> employees2 = query2.list();
         
-        
+        for (Object o : employees2) {
+        	
+        }
     }
 }
