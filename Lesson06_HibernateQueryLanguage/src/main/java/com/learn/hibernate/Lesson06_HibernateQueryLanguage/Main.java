@@ -84,14 +84,15 @@ public class Main
     	
     	
     	// functions in HQL
-    	SelectionQuery<Object> query = session.createSelectionQuery("select sum(salary) from Employee", Object.class);
-    	Object totalSalaries = query.getSingleResult();    	
+    	SelectionQuery<Object> query5 = session.createSelectionQuery("select sum(salary) from Employee", Object.class);
+    	Object totalSalaries = query5.getSingleResult();    	
     			
     	System.out.println("Total salaries: " + totalSalaries);
     	System.out.println();
     	session.getTransaction().commit();
     	session.beginTransaction();
     	
+    	SelectionQuery<Employee> query6 = session.createSelectionQuery("from Employee where employee = :emp", Employee.class);
     	
     	
     }
