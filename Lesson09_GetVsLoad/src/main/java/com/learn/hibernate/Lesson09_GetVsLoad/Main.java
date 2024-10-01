@@ -22,6 +22,14 @@ public class Main
         
         session.beginTransaction();
         
+        // Getting Employee with get method
+        Employee eGet = session.get(Employee.class, 101);
+        System.out.println(eGet);
+        
+        // Getting Employee with load. Load returns a proxy and only hits the database when the object is used in a method
+        Employee eLoad = session.load(Employee.class, 101);
+        System.out.println(eLoad);
+        
         session.getTransaction().commit();
     }
 }
