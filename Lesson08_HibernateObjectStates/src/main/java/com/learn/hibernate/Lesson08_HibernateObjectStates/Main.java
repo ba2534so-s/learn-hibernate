@@ -21,6 +21,11 @@ public class Main
         
         session.beginTransaction();
         
+        Employee e = new Employee();
+        e.setEmployeeId(51);
+        e.setName("John Carter");
+        e.setSalary(25000);
+        
         
         session.getTransaction().commit();
     }
