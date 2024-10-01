@@ -29,9 +29,10 @@ public class Main
         e.setName("Bruce Wayne");
         e.setSalary(33000);
         
-        em.getTransaction().begin();
-        em.persist(e);
-        em.getTransaction().commit();
+        
+        //em.getTransaction().begin();
+        //em.persist(e);
+        //em.getTransaction().commit();
         
     }
 }
