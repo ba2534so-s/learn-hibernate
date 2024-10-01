@@ -82,6 +82,10 @@ public class Main
     	session.getTransaction().commit();
     	session.beginTransaction();
     	
+    	SelectionQuery<Object> totalSalaries = session.createSelectionQuery("select sum(salary) from Employee", Object.class);
+    			
+    	
+    	
     	
     }
 }
