@@ -1,8 +1,12 @@
 package com.learn.hibernate.Lesson10_JPA;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
 public class Employee {
 	
+	@Id
 	private int employeeId;
 	private String name;
 	private int salary;
