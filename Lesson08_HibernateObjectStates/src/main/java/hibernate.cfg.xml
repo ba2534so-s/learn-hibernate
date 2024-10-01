@@ -10,6 +10,6 @@
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="hbm2ddl.auto">update</property>
-        proper<property name="show_sql">true</property>
+        <property name="show_sql">true</property>
     </session-factory>
 </hibernate-configuration>

@@ -4,7 +4,7 @@ package com.learn.hibernate.Lesson08_HibernateObjectStates;
  * Hello world!
  *
  */
-public class App 
+public class Main 
 {
     public static void main( String[] args )
     {
