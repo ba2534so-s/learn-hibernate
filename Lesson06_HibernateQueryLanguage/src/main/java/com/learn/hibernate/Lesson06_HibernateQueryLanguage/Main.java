@@ -92,8 +92,9 @@ public class Main
     	session.getTransaction().commit();
     	session.beginTransaction();
     	
+    	// setting parameter outside of query
     	SelectionQuery<Employee> query6 = session.createSelectionQuery("from Employee where employee = :emp", Employee.class);
-    	
+    	query6.setParameter("emp", 4);
     	
     }
 }
