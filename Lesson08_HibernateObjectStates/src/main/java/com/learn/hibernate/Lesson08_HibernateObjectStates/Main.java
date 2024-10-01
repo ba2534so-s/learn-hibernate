@@ -25,6 +25,8 @@ public class Main
         e.setEmployeeId(51);
         e.setName("John Carter");
         e.setSalary(25000);
+        // Employee e is currently in TRANSIENT state since it hasn't been added to the table/db yet
+        
         
         
         session.getTransaction().commit();
