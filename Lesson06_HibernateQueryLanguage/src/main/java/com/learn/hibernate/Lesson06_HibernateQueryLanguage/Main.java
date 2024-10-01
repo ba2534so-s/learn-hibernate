@@ -80,6 +80,7 @@ public class Main
     	}
     	System.out.println();
     	session.getTransaction().commit();
+    	session.beginTransaction();
     	
     	
     }
