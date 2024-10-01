@@ -87,6 +87,7 @@ public class Main
     			
     	System.out.println("Total salaries: " + totalSalaries);
     	System.out.println();
+    	session.getTransaction().commit();
     	
     }
 }
