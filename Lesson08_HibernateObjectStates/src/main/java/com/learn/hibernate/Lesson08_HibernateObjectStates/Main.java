@@ -25,15 +25,16 @@ public class Main
         e.setEmployeeId(51);
         e.setName("John Carter");
         e.setSalary(25000);
-        // Employee e is currently in TRANSIENT state since it hasn't been added to the table/db yet
+        // Employee e is currently in TRANSIENT state since it hasn't been added to the db yet
         
         // Employee e now goes into PERSISTENT state and changes can still be made to the object
         session.persist(e);
         e.setSalary(27000);
         
         
-        // Employee e now goes into detached state
+        // Employee e now goes into detached state and changes wont get saved in the db
         session.detach(e);
+        e.setSalary(10000);
         
         
         
