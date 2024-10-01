@@ -16,5 +16,7 @@ public class Main
         EntityManager em = emf.createEntityManager();
         
         Employee e = em.find(Employee.class, 101);
+        
+        System.out.println(e);
     }
 }
