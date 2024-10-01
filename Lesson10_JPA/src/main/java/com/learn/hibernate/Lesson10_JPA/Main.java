@@ -14,5 +14,7 @@ public class Main
     {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistence-unit");
         EntityManager em = emf.createEntityManager();
+        
+        Employee e = em.find(Employee.class, 101);
     }
 }
