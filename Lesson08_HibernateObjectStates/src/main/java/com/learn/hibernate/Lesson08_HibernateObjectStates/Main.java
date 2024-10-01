@@ -27,11 +27,19 @@ public class Main
         e.setSalary(25000);
         // Employee e is currently in TRANSIENT state since it hasn't been added to the table/db yet
         
+        // Employee e now goes into PERSISTENT state and changes can still be made to the object
         session.persist(e);
         e.setSalary(27000);
         
+        
+        // Employee e now goes into detached state
+        session.detach(e);
+        
+        
+        
+        
+        // Employee desn't get saved to table until it's commited
         session.getTransaction().commit();
-        // Employee now goes into PERSISTENT state since it has been added to the table/db
         
         
     }
