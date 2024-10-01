@@ -25,7 +25,8 @@ public class Main
         session.beginTransaction();
 
         // Using SQL queries in Hibernate 6
-        NativeQuery<Employee> employees = session.createNativeQuery("SELECT * FROM employees", Employee.class);
+        NativeQuery<Employee> query = session.createNativeQuery("SELECT * FROM employees", Employee.class);
+        List<Employee> employees = query.getResultList();
         
         session.getTransaction().commit();
         
