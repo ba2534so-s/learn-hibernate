@@ -45,5 +45,8 @@ public class Main
         for (Object[] o : employees2) {
         	System.out.println(o[0] + ": " + o[1]);
         }
+        
+        session.getTransaction().commit();
+        session.close();
     }
 }
