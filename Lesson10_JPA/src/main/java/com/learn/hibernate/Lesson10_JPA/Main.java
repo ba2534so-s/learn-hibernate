@@ -29,7 +29,7 @@ public class Main
         e.setName("Bruce Wayne");
         e.setSalary(33000);
         
-        
+        em.persist(e);
         
     }
 }
