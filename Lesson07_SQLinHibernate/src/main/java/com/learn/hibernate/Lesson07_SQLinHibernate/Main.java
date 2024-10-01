@@ -28,6 +28,10 @@ public class Main
         NativeQuery<Employee> query = session.createNativeQuery("SELECT * FROM employees WHERE salary > 35000", Employee.class);
         List<Employee> employees = query.getResultList();
         
+        for(Employee e : employees) {
+        	
+        }
+        
         session.getTransaction().commit();
         
         
