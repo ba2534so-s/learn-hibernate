@@ -99,5 +99,6 @@ public class Main
     	System.out.println(e);
     	
     	session.getTransaction().commit();
+    	session.close();
     }
 }
