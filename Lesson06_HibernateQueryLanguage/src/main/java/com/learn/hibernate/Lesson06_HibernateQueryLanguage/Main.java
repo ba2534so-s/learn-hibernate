@@ -79,6 +79,8 @@ public class Main
     		System.out.println("Id: " + o[0] + " - " + o[1] + " - " + o[2]);
     	}
     	
+    	session.getTransaction().commit();
+    	
     	
     }
 }
