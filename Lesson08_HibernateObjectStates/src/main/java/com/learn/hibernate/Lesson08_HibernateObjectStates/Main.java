@@ -22,8 +22,8 @@ public class Main
         session.beginTransaction();
         
         Employee e = new Employee();
-        e.setEmployeeId(51);
-        e.setName("John Carter");
+        e.setEmployeeId(52);
+        e.setName("Kyle Mason");
         e.setSalary(25000);
         // Employee e is currently in TRANSIENT state since it hasn't been added to the db yet
         
