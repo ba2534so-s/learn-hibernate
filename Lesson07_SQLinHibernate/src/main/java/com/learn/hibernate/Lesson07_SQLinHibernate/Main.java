@@ -33,7 +33,6 @@ public class Main
         }
         
         session.getTransaction().commit();
-        session.close();
         
         session.beginTransaction();
         
@@ -43,8 +42,8 @@ public class Main
         
         List<Object[]> employees2 = query2.list();
         
-        for (Object o : employees2) {
-        	
+        for (Object[] o : employees2) {
+        	System.out.println(o[0] + ": " + o[1]);
         }
     }
 }
