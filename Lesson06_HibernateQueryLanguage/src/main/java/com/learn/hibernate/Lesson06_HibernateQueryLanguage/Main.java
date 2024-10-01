@@ -85,7 +85,7 @@ public class Main
     	SelectionQuery<Object> query = session.createSelectionQuery("select sum(salary) from Employee", Object.class);
     	Object totalSalaries = query.getSingleResult();    	
     			
-    	
+    	System.out.println("Total salaries: " + totalSalaries);
     	
     	
     }
