@@ -27,7 +27,8 @@ public class Main
         e.setSalary(25000);
         // Employee e is currently in TRANSIENT state since it hasn't been added to the table/db yet
         
-        
+        // Employee now goes into persistent state since it gets added to the table/db
+        session.persist(e);
         
         session.getTransaction().commit();
     }
