@@ -93,9 +93,11 @@ public class Main
     	session.beginTransaction();
     	
     	// setting parameter outside of query (prepared statement)
-    	SelectionQuery<Employee> query6 = session.createSelectionQuery("from Employee where employee = :emp", Employee.class);
+    	SelectionQuery<Employee> query6 = session.createSelectionQuery("from Employee where employeeId = :emp", Employee.class);
     	query6.setParameter("emp", 4);
     	e = query6.getSingleResult();
     	System.out.println(e);
+    	
+    	session.getTransaction().commit();
     }
 }
