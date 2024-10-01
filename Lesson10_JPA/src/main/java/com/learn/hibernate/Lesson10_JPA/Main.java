@@ -31,7 +31,7 @@ public class Main
         
         em.getTransaction().begin();
         em.persist(e);
-        
+        em.getTransaction().commit();
         
     }
 }
