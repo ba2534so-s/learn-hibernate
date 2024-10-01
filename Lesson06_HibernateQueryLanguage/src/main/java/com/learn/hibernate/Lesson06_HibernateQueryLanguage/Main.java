@@ -78,7 +78,7 @@ public class Main
     	for (Object[] o : employeeColumns) {
     		System.out.println("Id: " + o[0] + " - " + o[1] + " - " + o[2]);
     	}
-    	
+    	System.out.println();
     	session.getTransaction().commit();
     	
     	
