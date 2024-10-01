@@ -22,14 +22,17 @@ public class Main
         session.beginTransaction();
         
         Employee e = new Employee();
-        e.setEmployeeId(52);
-        e.setName("Kyle Mason");
+        e.setEmployeeId(53);
+        e.setName("Cameron Dean");
         e.setSalary(25000);
         // Employee e is currently in TRANSIENT state since it hasn't been added to the db yet
         
         // Employee e now goes into PERSISTENT state and changes can still be made to the object
         session.persist(e);
-        e.setSalary(27000);
+        e.setSalary(28000);
+        
+        // Remove employee from table. EMployee goes into REMOVED STATE and won't be saved to db
+        session.remove(e);
         
         // Employee desn't get saved to table until it's committed
         session.getTransaction().commit();
