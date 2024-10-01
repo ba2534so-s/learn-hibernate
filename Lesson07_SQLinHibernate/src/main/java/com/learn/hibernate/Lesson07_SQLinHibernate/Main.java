@@ -26,9 +26,9 @@ public class Main
 
         // Using SQL queries in Hibernate 6
         NativeQuery<Employee> query1 = session.createNativeQuery("SELECT * FROM employee WHERE salary > 35000", Employee.class);
-        List<Employee> employees = query1.list();
+        List<Employee> employees1 = query1.list();
         
-        for(Employee e : employees) {
+        for(Employee e : employees1) {
         	System.out.println(e);
         }
         
@@ -40,6 +40,8 @@ public class Main
         // Getting specific columns
         NativeQuery<Object[]> query2 = session.createNativeQuery(
         		"SELECT name, salary FROM employee where salary > 35000", Object[].class);
+        
+        List<Object[]> employees2 = query2.list();
         
         
     }
