@@ -73,6 +73,8 @@ public class Main
     	
     	SelectionQuery<Object[]> query4 = session.createSelectionQuery(
     			"select employeeId, name, salary from Employee", Object[].class);
+    	List<Object[]> employeeColumns = query4.getResultList(); 
+    	
     	
     }
 }
