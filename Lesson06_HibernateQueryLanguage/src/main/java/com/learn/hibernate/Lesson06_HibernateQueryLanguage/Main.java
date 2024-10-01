@@ -69,7 +69,7 @@ public class Main
     	System.out.println();
     	
     	session.getTransaction().commit();
-    	
+    	session.beginTransaction();
     	
     	SelectionQuery<Object[]> query4 = session.createSelectionQuery(
     			"select employeeId, name, salary from Employee", Object[].class);
