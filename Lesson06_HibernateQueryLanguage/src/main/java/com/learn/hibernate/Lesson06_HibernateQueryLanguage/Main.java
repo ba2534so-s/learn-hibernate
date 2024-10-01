@@ -96,5 +96,6 @@ public class Main
     	SelectionQuery<Employee> query6 = session.createSelectionQuery("from Employee where employee = :emp", Employee.class);
     	query6.setParameter("emp", 4);
     	e = query6.getSingleResult();
+    	System.out.println(e);
     }
 }
