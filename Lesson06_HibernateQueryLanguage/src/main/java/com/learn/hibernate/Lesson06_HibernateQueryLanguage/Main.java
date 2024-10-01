@@ -82,6 +82,8 @@ public class Main
     	session.getTransaction().commit();
     	session.beginTransaction();
     	
+    	
+    	// functions in HQL
     	SelectionQuery<Object> query = session.createSelectionQuery("select sum(salary) from Employee", Object.class);
     	Object totalSalaries = query.getSingleResult();    	
     			
